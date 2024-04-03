@@ -16,9 +16,9 @@
         <div>
           <button
             id="hamburger-button"
-            class="text-3xl md:hidden cursor-pointer"
+            class="text-3xl md:hidden cursor-pointer relative w-8 h-8"
           >
-            &#9776;
+            <!-- &#9776; -->
           </button>
           <!-- this nav hides in certain size for mobile/desktop -->
           <nav class="hidden md:block space-x-8 text-xl" aria-label="main">
@@ -28,12 +28,13 @@
           </nav>
         </div>
       </section>
-      <!-- this below is the menu once clicked. Covers the screen -->
+      <!-- this below is the menu once clicked. Covers the screen. top-0 -->
+      <!-- changed the classes to show top nav area by changing class to top-68 -->
       <section
         id="mobile-menu"
-        class="absolute top-0 bg-black w-full text-5xl flex-col justify-content-center origin-top animate-open-menu hidden"
+        class="absolute top-68 bg-black w-full text-5xl flex-col justify-content-center origin-top animate-open-menu hidden"
       >
-        <button class="text-8xl self-end px-6">&times;</button>
+        <!-- <button class="text-8xl self-end px-6">&times;</button> -->
         <nav
           class="flex flex-col min-h-screen items-center py-8"
           aria-label="mobile"

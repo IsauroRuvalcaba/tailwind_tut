@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 @layer utilities {
+  /* this is so that each section is full screen in mobile view except for the nav area */
   .section-min-height {
     min-height: calc(100vh - 68px);
   }
